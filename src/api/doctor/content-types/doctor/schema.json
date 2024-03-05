@@ -55,6 +55,12 @@
     },
     "Premium": {
       "type": "boolean"
+    },
+    "appointments": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::appointment.appointment",
+      "mappedBy": "doctors"
     }
   }
 }
